@@ -1,4 +1,4 @@
-interface ProductData{
+export interface ProductData{
     id: number;
     title: string;
     description: string;
@@ -9,7 +9,7 @@ interface ProductData{
     brand: string;
 }
 
-class Product {
+export class Product {
     constructor(private data: ProductData){}
 
     displayDetails(): void{
