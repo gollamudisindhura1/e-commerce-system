@@ -20,7 +20,7 @@ async function displayFeaturedProducts() {
             console.log(`Original Price: $${data.price.toFixed(2)}`);
             console.log(`Discount Applied: -$${discountAmount.toFixed(2)}(${data.discountPercentage})`);
             console.log(`Price After Discount: $${discountedPrice.toFixed(2)}`);
-            console.log(`Tax: (${data.category === "groceries" ? "3%" : "5%"}) + $${taxAmount.toFixed(2)}`);
+            console.log(`Tax: (${data.category === "groceries" ? "3%" : "4.75%"}) + $${taxAmount.toFixed(2)}`);
             console.log(`Original Price: $${data.price.toFixed(2)}`);
             console.log(`Final Price: $${finalPrice.toFixed(2)}`);
         });
