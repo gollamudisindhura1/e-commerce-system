@@ -1,0 +1,49 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+header { text-align: center; margin-bottom: 3rem; }
+h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: white;
+  color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  transition: all 0.4s;
+}
+.card:hover { transform: translateY(-15px); box-shadow: 0 25px 50px rgba(0,0,0,0.3); }
+.card-img {
+  height: 250px;
+  background: linear-gradient(45deg, #e0e7ff, #c3dafe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5b21b6;
+}
+.card-body { padding: 2rem; }
+.card-title { font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; color: #1e293b; }
+.price-row { display: flex; justify-content: space-between; margin: 0.8rem 0; font-size: 1.2rem; }
+.original { text-decoration: line-through; color: #94a3b8; }
+.discount { color: #dc2626; font-weight: bold; }
+.final-price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #16a34a;
+  border-top: 4px solid #16a34a;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: right;
+}
+.loading { text-align: center; padding: 4rem; font-size: 2rem; }
